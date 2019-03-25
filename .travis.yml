@@ -1,3 +1,6 @@
+branches:
+  only:
+  - test
 android:
   components:
   - tools
@@ -16,6 +19,8 @@ android:
   - android-sdk-preview-license-.+
   - android-sdk-license-.+
   - google-gdk-license-.+
+
+
 
 
 
