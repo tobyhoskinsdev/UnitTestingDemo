@@ -3,6 +3,7 @@ package examples.aaronhoskins.com.unittesting;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
@@ -16,12 +17,12 @@ import static org.mockito.Mockito.times;
 
 @RunWith(MockitoJUnitRunner.class)
 public class StringUtilTest {
-
+    @Mock
     Student mockStudent;
 
     @Before
     public void setup() {
-        mockStudent = mock(Student.class);
+        //mockStudent = mock(Student.class);
         Mockito.when(mockStudent.getStudentName()).thenReturn("Bob");
     }
 
